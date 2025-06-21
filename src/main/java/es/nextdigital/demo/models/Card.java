@@ -24,5 +24,14 @@ public class Card {
 	private Float limit;
 	@ManyToOne
 	private Account account;
+	
+	public boolean isCardExpired() {
+		boolean isExpired = false;
+		Date now = new Date();
+		
+		if(this.expirationDate.before(now)) isExpired = true;
+		
+		return isExpired;
+	}
 
 }
