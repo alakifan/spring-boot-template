@@ -1,6 +1,7 @@
 package es.nextdigital.demo.models;
 
 import java.util.Date;
+import java.util.UUID;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +16,7 @@ public class Card {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
-	private Long id;
+	private UUID id;
 	private String cardNumber;
 	private Date expirationDate;
 	private String secretNumber;

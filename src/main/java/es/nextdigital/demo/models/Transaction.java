@@ -1,6 +1,7 @@
 package es.nextdigital.demo.models;
 
 import java.util.Date;
+import java.util.UUID;
 
 import es.nextdigital.demo.models.enums.TransactionType;
 import jakarta.persistence.Entity;
@@ -18,7 +19,7 @@ public class Transaction {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
-	private Long id;
+	private UUID id;
 	private Date date;
 	private Float ammount;
 	@ManyToOne

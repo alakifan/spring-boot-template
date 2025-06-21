@@ -1,6 +1,7 @@
 package es.nextdigital.demo.models;
 
 import java.util.List;
+import java.util.UUID;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,7 +16,7 @@ public class Bank {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
-	private Long id;
+	private UUID id;
 	private String name;
 	private Float externalCommission;
 	@OneToMany(mappedBy = "bank")

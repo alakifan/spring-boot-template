@@ -1,6 +1,7 @@
 package es.nextdigital.demo.models;
 
 import java.util.List;
+import java.util.UUID;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,7 +17,7 @@ public class Account {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
-	private Long id;
+	private UUID id;
 	private Float savings;
 	private String iban;
 	@ManyToOne
