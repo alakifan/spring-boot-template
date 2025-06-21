@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity
-public class User {
+public class BankUser {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)

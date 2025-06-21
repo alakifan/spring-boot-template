@@ -21,7 +21,7 @@ public class Card {
 	private Date expirationDate;
 	private String secretNumber;
 	private boolean active;
-	private Float limit;
+	private Float cardLimit;
 	@ManyToOne
 	private Account account;
 	

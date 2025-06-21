@@ -4,8 +4,8 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import es.nextdigital.demo.models.User;
+import es.nextdigital.demo.models.BankUser;
 
-public interface IUserRepository extends JpaRepository<User, UUID> {
+public interface IUserRepository extends JpaRepository<BankUser, UUID> {
 
 }

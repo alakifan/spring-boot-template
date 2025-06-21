@@ -21,7 +21,7 @@ public class Account {
 	private Float savings;
 	private String iban;
 	@ManyToOne
-	private User user;
+	private BankUser user;
 	@ManyToOne
 	private Bank bank;
 	@OneToMany(mappedBy = "account")
